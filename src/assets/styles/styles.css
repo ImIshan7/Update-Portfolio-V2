@@ -75,3 +75,115 @@ html {
         opacity: 1;
     }
 }
+
+
+/* Timeline Styles */
+.timeline-marker {
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    bottom: -160px;
+    width: 2px;
+    background: linear-gradient(
+            to bottom,
+            theme('colors.purple.500') 0%,
+            theme('colors.indigo.500/50') 100%
+    );
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px theme('colors.purple.500/20');
+}
+
+.timeline-item:last-child .timeline-line {
+    display: none;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-title {
+    animation: titleFadeIn 0.8s ease-out forwards;
+}
+
+.timeline-item {
+    animation: slideIn 0.8s ease-out forwards;
+    animation-delay: var(--delay);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: theme('colors.purple.500');
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.indigo.500');
+}
+
+/* Ensure animations play smoothly */
+* {
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Glass effect base styles */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced hover effects */
+.timeline-content {
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(8px);
+    box-shadow: 0 10px 30px -5px rgb(255, 255, 255);
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(to right, #1b1c24, #1b1c24);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

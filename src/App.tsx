@@ -9,6 +9,7 @@ import ast02 from './assets/images/pngwing.com (1).png'
 import ast03 from './assets/images/pngwing.com (2).png'
 import aboutback from './assets/images/aboutback.jpg'
 import back from './assets/images/back02.jpg'
+import Timeline from './components/TimeLine';
 function App() {
     const [loading, setLoading] = useState(true);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,11 +27,16 @@ function App() {
             <nav className="bg-black  text-white py-3 px-4 flex items-center justify-between sticky top-0 z-50 w-full">
                 <a className="font-extrabold font-mono text-white text-xl tracking-tight" href="#">ISHAN</a>
                 <div className="hidden md:flex items-center space-x-4">
-                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#home">Home</a>
-                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#about">About</a>
-                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#project">Project</a>
-                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#service">Service</a>
-                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#contact">Contact</a>
+                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700"
+                       href="#home">Home</a>
+                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700"
+                       href="#about">About</a>
+                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700"
+                       href="#project">Project</a>
+                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700"
+                       href="#service">Service</a>
+                    <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700"
+                       href="#contact">Contact</a>
                 </div>
 
                 {/* Hamburger Menu for Mobile */}
@@ -43,18 +49,29 @@ function App() {
 
                 {/* Mobile Menu */}
                 {isMobileMenuOpen && (
-                    <div className="absolute top-full left-0 right-0 bg-black md:hidden flex flex-col items-center space-y-4 py-4">
-                        <a onClick={toggleMobileMenu} className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700" href="#home">Home</a>
-                        <a onClick={toggleMobileMenu} className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700" href="#about">About</a>
-                        <a onClick={toggleMobileMenu} className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700" href="#project">Project</a>
-                        <a onClick={toggleMobileMenu} className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700" href="#service">Service</a>
-                        <a onClick={toggleMobileMenu} className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700" href="#contact">Contact</a>
+                    <div
+                        className="absolute top-full left-0 right-0 bg-black md:hidden flex flex-col items-center space-y-4 py-4">
+                        <a onClick={toggleMobileMenu}
+                           className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700"
+                           href="#home">Home</a>
+                        <a onClick={toggleMobileMenu}
+                           className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700"
+                           href="#about">About</a>
+                        <a onClick={toggleMobileMenu}
+                           className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700"
+                           href="#project">Project</a>
+                        <a onClick={toggleMobileMenu}
+                           className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700"
+                           href="#service">Service</a>
+                        <a onClick={toggleMobileMenu}
+                           className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700"
+                           href="#contact">Contact</a>
                     </div>
                 )}
             </nav>
 
             <AnimatePresence>
-                {loading && <LoadingScreen />}
+                {loading && <LoadingScreen/>}
             </AnimatePresence>
 
             <div className="min-h-screen relative overflow-hidden text-white">
@@ -68,19 +85,19 @@ function App() {
                         backgroundAttachment: 'fixed'
                     }}
                 />
-                <div className="absolute inset-0 bg-black/80 z-0" />
+                <div className="absolute inset-0 bg-black/80 z-0"/>
 
                 <div className="container mx-auto px-4 py-12 relative z-10">
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-20">
-                            <AnimatedTitle text="Full Stack Developer" delay={0.2} />
-                            <AnimatedTitle text="Entrepreneur" delay={0.4} />
-                            <AnimatedTitle text="Digital Creator" delay={0.6} />
+                            <AnimatedTitle text="Full Stack Developer" delay={0.2}/>
+                            <AnimatedTitle text="Entrepreneur" delay={0.4}/>
+                            <AnimatedTitle text="Digital Creator" delay={0.6}/>
 
                             <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 0.8 }}
+                                initial={{opacity: 0}}
+                                animate={{opacity: 1}}
+                                transition={{delay: 0.8}}
                                 className="text-xl md:text-2xl mt-8 mb-12 text-blue-400"
                             >
                                 <Typewriter
@@ -93,14 +110,14 @@ function App() {
                             </motion.div>
 
                             <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 1 }}
+                                initial={{opacity: 0, y: 20}}
+                                animate={{opacity: 1, y: 0}}
+                                transition={{delay: 1}}
                                 className="flex gap-4 justify-center mb-16"
                             >
                                 <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
+                                    whileHover={{scale: 1.05}}
+                                    whileTap={{scale: 0.95}}
                                     className="px-8 py-3 bg-blue-600 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300 relative overflow-hidden group"
                                 >
                                     <span className="relative z-10">Hire Me</span>
@@ -113,8 +130,8 @@ function App() {
                                 </motion.button>
 
                                 <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
+                                    whileHover={{scale: 1.05}}
+                                    whileTap={{scale: 0.95}}
                                     className="px-8 py-3 bg-transparent border-2 border-white rounded-full font-semibold hover:bg-white hover:text-black transition-all duration-300"
                                 >
                                     Contact Us
@@ -124,25 +141,27 @@ function App() {
 
                         {/* Remove existing image and replace with astronaut PNGs */}
                         <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 1.8 }}
+                            initial={{opacity: 0, y: 50}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{delay: 1.8}}
                             className="relative group"
                         >
                             {/* Astronaut PNGs */}
                             <div className="relative">
                                 {/* First Astronaut */}
-                             {/*   <motion.img
-                                    src={ast01}
+
+
+                               {/* {<motion.img
+                                    src={aboutback}
                                     alt="Astronaut 1"
                                     className="absolute top-0 left-0"
-                                    animate={{ y: [0, -20, 0], rotate: [0, 10, -10, 0] }}
-                                    transition={{ repeat: Infinity, duration: 6 }}
-                                />*/}
+                                    animate={{y: [0, -20, 0], rotate: [0, 10, -10, 0]}}
+                                    transition={{repeat: Infinity, duration: 6}}
+                                />}*/}
 
                                 {/* Second Astronaut */}
 
-                               {/* <motion.img
+                                {/* <motion.img
                                     src={ast02}   // Your astronaut PNG source
                                     alt="Astronaut 2"
                                     className="absolute bottom-0 right-0"
@@ -201,10 +220,12 @@ function App() {
                 }}>
                 <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
                     <div className="lg:w-1/2">
-                        <div id="avator" className="lg:scale-110 h-80 bg-cover lg:h-full rounded-b-none border lg:rounded-lg duration-500 hover:scale-105 hover:shadow-xl">
+                        <div id="avator"
+                             className="lg:scale-110 h-80 bg-cover lg:h-full rounded-b-none border lg:rounded-lg duration-500 hover:scale-105 hover:shadow-xl">
                         </div>
                     </div>
-                    <div className="py-12 px-6 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none border lg:rounded-lg">
+                    <div
+                        className="py-12 px-6 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none border lg:rounded-lg">
                         <h2 className="text-5xl text-gray-800  font-mono font-extrabold">
                             Who Am I ?
                         </h2>
@@ -224,28 +245,54 @@ function App() {
 
                         <div className=" flex justify-center mt-5 space-x-5">
                             <a href="https://www.facebook.com/ishan.danu.9" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+                                <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png"/>
                             </a>
-                            <a href="https://www.linkedin.com/in/ishan-dhananjana-615878226/" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+                            <a href="https://www.linkedin.com/in/ishan-dhananjana-615878226/" target="_blank"
+                               rel="noopener noreferrer">
+                                <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png"/>
                             </a>
-                            <a href="https://www.instagram.com/im_i__shan/?fbclid=IwAR11_LHvNk4u28y6NvOHI9UcfAY-q5FKcZzO6Crn2lmFJxzUFaLyf2_UhOc" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+                            <a href="https://www.instagram.com/im_i__shan/?fbclid=IwAR11_LHvNk4u28y6NvOHI9UcfAY-q5FKcZzO6Crn2lmFJxzUFaLyf2_UhOc"
+                               target="_blank" rel="noopener noreferrer">
+                                <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/>
                             </a>
                             <a href="https://www.facebook.com/ishan.danu.9" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+                                <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png"/>
                             </a>
-                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fishandananjay10" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fishandananjay10"
+                               target="_blank" rel="noopener noreferrer">
+                                <img src="https://img.icons8.com/fluent/30/000000/twitter.png"/>
                             </a>
 
                             <a href="https://github.com/ImIshan7" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/github.png" />
+                                <img src="https://img.icons8.com/fluent/30/000000/github.png"/>
                             </a>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
+
+
+            <div className="min-h-screen bg-cover bg-center bg-fixed"
+                 style={{
+                     backgroundImage: `linear-gradient(to bottom, rgba(17, 24, 39, 0.9), rgba(55, 48, 163, 0.8)), 
+           url('https://images.unsplash.com/photo-1534009916851-7850ba974f9c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
+                 }}>
+                <Timeline />
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         </>
