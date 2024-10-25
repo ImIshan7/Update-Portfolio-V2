@@ -1,0 +1,77 @@
+.text-stroke {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    animation: strokeAnimation 3s infinite alternate;
+}
+
+@keyframes strokeAnimation {
+    from {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+
+#avator{
+    background-image: url("../images/back02.jpg");
+}
+
+
+
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-right {
+    animation: slide-in-right 0.8s ease-out;
+}
+
+/* Add this in your CSS file for debugging */
+.temporary {
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: slideInRight 0.5s ease-out forwards;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
