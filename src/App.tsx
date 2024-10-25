@@ -10,6 +10,7 @@ import ast03 from './assets/images/pngwing.com (2).png'
 import aboutback from './assets/images/aboutback.jpg'
 import back from './assets/images/back02.jpg'
 import Timeline from './components/TimeLine';
+import AboutSection from './components/AboutSection';
 function App() {
     const [loading, setLoading] = useState(true);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,7 +25,9 @@ function App() {
     return (
         <>
             {/* Navbar */}
-            <nav className="bg-black  text-white py-3 px-4 flex items-center justify-between sticky top-0 z-50 w-full">
+
+
+            <nav className="bg-black text-white py-3  px-4 flex items-center justify-between sticky top-0 z-50 w-full">
                 <a className="font-extrabold font-mono text-white text-xl tracking-tight" href="#">ISHAN</a>
                 <div className="hidden md:flex items-center space-x-4">
                     <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700"
@@ -37,6 +40,9 @@ function App() {
                        href="#service">Service</a>
                     <a className="text-xl font-bold font-mono px-4 py-2 leading-none rounded-full hover:bg-gray-700"
                        href="#contact">Contact</a>
+
+
+
                 </div>
 
                 {/* Hamburger Menu for Mobile */}
@@ -50,7 +56,7 @@ function App() {
                 {/* Mobile Menu */}
                 {isMobileMenuOpen && (
                     <div
-                        className="absolute top-full left-0 right-0 bg-black md:hidden flex flex-col items-center space-y-4 py-4">
+                        className="absolute  top-full left-0 right-0 bg-black md:hidden flex flex-col items-center space-y-4 py-4">
                         <a onClick={toggleMobileMenu}
                            className="text-xl font-bold font-mono px-4 py-2 rounded-full hover:bg-gray-700"
                            href="#home">Home</a>
@@ -74,7 +80,7 @@ function App() {
                 {loading && <LoadingScreen/>}
             </AnimatePresence>
 
-            <div className="min-h-screen relative overflow-hidden text-white">
+            <div id="home" className="min-h-screen relative overflow-hidden text-white">
                 {/* Background image with overlay */}
                 <div
                     className="absolute inset-0 z-0"
@@ -208,7 +214,7 @@ function App() {
                 />
             </div>
 
-            <div
+           {/* <div
                 id="about"
                 className="px-2 py-20 w-full flex justify-center bg-black bg-opacity-50"
                 style={{
@@ -218,57 +224,10 @@ function App() {
                     backgroundBlendMode: 'overlay', // Blends with the black background
                     backgroundColor: 'rgba(0, 0, 0, 0.9)' // Black transparent overlay
                 }}>
-                <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
-                    <div className="lg:w-1/2">
-                        <div id="avator"
-                             className="lg:scale-110 h-80 bg-cover lg:h-full rounded-b-none border lg:rounded-lg duration-500 hover:scale-105 hover:shadow-xl">
-                        </div>
-                    </div>
-                    <div
-                        className="py-12 px-6 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none border lg:rounded-lg">
-                        <h2 className="text-5xl text-gray-800  font-mono font-extrabold">
-                            Who Am I ?
-                        </h2>
-                        <p className="mt-4 font-mono font-medium text-gray-950">
+            </div>*/}
 
-                            Ishan Dhananjana: A Journey of Passion
-
-                            In the charming city of Galle, Sri Lanka, Ishan Dhananjana's story unfolds with a vibrant
-                            tapestry of passion and purpose. Born on February 20, 2001, Ishan's journey is a testament
-                            to resilience and determination. From his early fascination with technology to his freelance
-                            endeavors, Ishan's portfolio reflects his creativity and commitment. His narrative inspires
-                            others to embrace their dreams and persevere against all odds. With each step forward,
-                            Ishan continues to carve his path, driven by his unwavering love for innovation and
-                            storytelling.
-
-                        </p>
-
-                        <div className=" flex justify-center mt-5 space-x-5">
-                            <a href="https://www.facebook.com/ishan.danu.9" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png"/>
-                            </a>
-                            <a href="https://www.linkedin.com/in/ishan-dhananjana-615878226/" target="_blank"
-                               rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png"/>
-                            </a>
-                            <a href="https://www.instagram.com/im_i__shan/?fbclid=IwAR11_LHvNk4u28y6NvOHI9UcfAY-q5FKcZzO6Crn2lmFJxzUFaLyf2_UhOc"
-                               target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/>
-                            </a>
-                            <a href="https://www.facebook.com/ishan.danu.9" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png"/>
-                            </a>
-                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fishandananjay10"
-                               target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/twitter.png"/>
-                            </a>
-
-                            <a href="https://github.com/ImIshan7" target="_blank" rel="noopener noreferrer">
-                                <img src="https://img.icons8.com/fluent/30/000000/github.png"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div id="about" className="min-h-screen bg-[#0a0a0a] text-gray-100">
+                <AboutSection />
             </div>
 
 
