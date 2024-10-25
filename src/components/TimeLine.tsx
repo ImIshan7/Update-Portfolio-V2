@@ -35,10 +35,10 @@ const timelineData = [
 const Timeline = () => {
     return (
         <div className="min-h-screen py-16 px-4 relative">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 pointer-events-none"></div>
 
             <h2 className="text-5xl font-bold text-center text-white mb-20 animate-title relative">
-        <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
           Educational Journey
         </span>
             </h2>
@@ -54,24 +54,24 @@ const Timeline = () => {
                         >
                             <div className="flex items-start gap-8">
                                 <div className="timeline-marker">
-                                    <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-indigo-600/90 to-purple-600/90 shadow-lg shadow-purple-500/50 transform transition-all duration-300 hover:scale-110 backdrop-blur-sm">
-                                        <Icon className="w-8 h-8 text-white" />
+                                    <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-gray-900 to-purple-900 shadow-lg shadow-purple-500/20 transform transition-all duration-300 hover:scale-110 backdrop-blur-sm border border-purple-500/20">
+                                        <Icon className="w-8 h-8 text-purple-200" />
                                     </div>
                                     <div className="timeline-line"></div>
                                 </div>
 
-                                <div className="timeline-content bg-white/10 backdrop-blur-md rounded-2xl p-8 w-full max-w-3xl transform transition-all duration-500 hover:translate-x-2 border border-white/10 shadow-xl hover:shadow-purple-500/20">
+                                <div className="timeline-content bg-gray-900/80 backdrop-blur-md rounded-2xl p-8 w-full max-w-3xl transform transition-all duration-500 hover:translate-x-2 border border-purple-500/20 shadow-xl hover:shadow-purple-500/10">
                                     <div className="flex items-center gap-3 mb-4">
                                         <Calendar className="w-5 h-5 text-purple-300" />
-                                        <span className="text-lg font-semibold text-purple-300">{item.year}</span>
+                                        <span className="text-lg font-semibold text-purple-200">{item.year}</span>
                                     </div>
 
-                                    <h3 className="text-2xl font-bold text-white mb-4 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                                    <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
                                         {item.title}
                                     </h3>
-                                    <p className="text-gray-200 mb-6 leading-relaxed">{item.description}</p>
+                                    <p className="text-gray-300 mb-6 leading-relaxed">{item.description}</p>
 
-                                    <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-500/30 to-purple-500/30 rounded-full border border-purple-500/20">
+                                    <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-gray-800 to-purple-900/50 rounded-full border border-purple-500/20">
                     <span className="text-sm font-semibold text-purple-200">
                       {item.level}
                     </span>

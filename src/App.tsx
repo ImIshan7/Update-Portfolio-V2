@@ -274,7 +274,7 @@ function App() {
 
             <div className="min-h-screen bg-cover bg-center bg-fixed"
                  style={{
-                     backgroundImage: `linear-gradient(to bottom, rgba(17, 24, 39, 0.9), rgba(55, 48, 163, 0.8)), 
+                     backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(23, 23, 23, 0.9)), 
            url('https://images.unsplash.com/photo-1534009916851-7850ba974f9c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
                  }}>
                 <Timeline />
