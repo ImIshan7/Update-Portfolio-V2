@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Instagram, Twitter, Facebook } from 'lucide-react';
 import AnimatedContent from './AnimatedContent';
-
+import about from '../assets/images/mine.jpeg';
 const AboutSection: React.FC = () => {
     return (
         <div className="relative min-h-screen w-full overflow-hidden">
@@ -47,7 +47,7 @@ const AboutSection: React.FC = () => {
                                     <div className="relative aspect-square overflow-hidden rounded-2xl">
                                         <div className="absolute inset-0 bg-gradient-to-tr from-purple-900/30 to-pink-900/30 mix-blend-overlay" />
                                         <img
-                                            src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2055&auto=format&fit=crop"
+                                            src={about}
                                             alt="Profile"
                                             className="w-full h-full object-cover transform transition duration-700 group-hover:scale-110 group-hover:rotate-2"
                                         />
