@@ -11,6 +11,7 @@ import aboutback from './assets/images/aboutback.jpg'
 import back from './assets/images/back02.jpg'
 import Timeline from './components/TimeLine';
 import AboutSection from './components/AboutSection';
+import TechStack from './components/TechStack';
 function App() {
     const [loading, setLoading] = useState(true);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -240,18 +241,7 @@ function App() {
             </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+            <TechStack/>
 
 
         </>
