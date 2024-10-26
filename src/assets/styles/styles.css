@@ -233,5 +233,29 @@ html {
 
 
 
-/*Tech Stack*/
+/* App.css */
+.App {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.App-header {
+    position: relative;
+    z-index: 1;
+}
+
+.hire-me {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
