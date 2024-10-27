@@ -6,14 +6,55 @@ import AboutSection from './components/AboutSection';
 import TechStack from './components/TechStack';
 import Navbar from './components/Navbar';
 import SpiderWeb from './components/SpiderWeb';
-import TypewriterText from './components/TypewriterText';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import {Boxes, Cloud, Code2, Database, Github, Layout, Linkedin, Mail, Smartphone } from 'lucide-react';
 import ParticleEffect from './components/ParticleEffect';
 import { Typewriter } from 'react-simple-typewriter';
 import mine from './assets/images/profile.png';
 import { ProjectSlider } from './components/ProjectSlider';
+import { StatsCounter } from './components/Service/StatsCounter';
+import { ServiceCard } from './components/Service/ServiceCard';
 
 function App() {
+
+
+    const services = [
+        {
+            icon: Code2,
+            title: "Web Development",
+            description: "Custom web applications built with modern technologies and best practices for scalable, maintainable solutions.",
+            image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+            icon: Smartphone,
+            title: "Mobile Development",
+            description: "Native and cross-platform mobile apps for iOS and Android that deliver exceptional user experiences.",
+            image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+            icon: Cloud,
+            title: "Cloud Solutions",
+            description: "Scalable cloud infrastructure and services that power your applications with reliability and performance.",
+            image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+            icon: Database,
+            title: "Backend Development",
+            description: "Robust and secure server-side solutions with optimized databases and API architectures.",
+            image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+            icon: Layout,
+            title: "UI/UX Design",
+            description: "User-centered design solutions that combine aesthetics with functionality to create engaging digital experiences.",
+            image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&q=80&w=800"
+        },
+        {
+            icon: Boxes,
+            title: "DevOps Services",
+            description: "Streamlined development operations with automated workflows and continuous integration/deployment.",
+            image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80&w=800"
+        }
+    ];
 
     // @ts-ignore
     return (
@@ -136,6 +177,28 @@ function App() {
             <TechStack/>
 
             <ProjectSlider/>
+
+            <div id="services" className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 py-16">
+                <div className="max-w-7xl mx-auto px-4">
+
+                    <h1 className="text-2xl md:text-4xl font-bold text-white text-center font-['Oswald']">Service</h1>
+
+                    <StatsCounter />
+
+                    <div className="flex flex-wrap -mx-4">
+                        {services.map((service, index) => (
+                            <ServiceCard
+                                key={index}
+                                Icon={service.icon}
+                                title={service.title}
+                                description={service.description}
+                                delay={index * 0.1}
+                                imagePath={service.image}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
 
 
         </>
