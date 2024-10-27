@@ -11,6 +11,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import ParticleEffect from './components/ParticleEffect';
 import { Typewriter } from 'react-simple-typewriter';
 import mine from './assets/images/profile.png';
+import { ProjectSlider } from './components/ProjectSlider';
 
 function App() {
 
@@ -133,6 +134,8 @@ function App() {
 
 
             <TechStack/>
+
+            <ProjectSlider/>
 
 
         </>

@@ -162,10 +162,7 @@ const TechStack = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600 mb-4">
-                        Technical Expertise
-                    </h2>
-                    <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto" />
+                    <h2 className="text-2xl md:text-4xl font-bold text-white font-['Oswald']">Technical Expertise</h2>
                 </motion.div>
 
                 {categories.map((category) => (

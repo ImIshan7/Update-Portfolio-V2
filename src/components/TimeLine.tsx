@@ -38,9 +38,7 @@ const Timeline = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 pointer-events-none"></div>
 
             <h2 className="text-5xl font-bold text-center text-white mb-20 animate-title relative">
-        <span className="bg-gradient-to-r from-white to-purple-200 bg-clip-text text-transparent">
-          Educational Journey
-        </span>
+                <span className="text-2xl md:text-4xl font-bold text-white font-['Oswald']"> Educational Journey </span>
             </h2>
 
             <div className="max-w-6xl mx-auto relative">
