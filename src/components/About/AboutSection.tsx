@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Instagram, Twitter, Facebook } from 'lucide-react';
-import AnimatedContent from './AnimatedContent';
-import about from '../assets/images/mine.jpeg';
+import AnimatedContent from '../About/AnimatedContent';
+import about from '../../assets/images/mine.jpeg';
 const AboutSection: React.FC = () => {
     return (
         <div className="relative min-h-screen w-full overflow-hidden">

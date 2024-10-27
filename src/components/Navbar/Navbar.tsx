@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import Logo from './Logo';
+import Logo from '../Home/Logo';
 import NavLink from './NavLink';
 import MobileMenu from './MobileMenu';
 import { navItems } from './navData';
