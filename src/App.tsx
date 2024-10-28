@@ -79,42 +79,42 @@ function App() {
                 <SpiderWeb />
 
                 <div className="container mx-auto px-4 min-h-screen flex items-center relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
-                        <div className="space-y-5 lg:space-y-7">
+                    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
+                        <div className="space-y-5 lg:space-y-7 text-center md:text-left">
                             <motion.h2
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.1, duration: 0.6 }}
                                 className="text-emerald-400 text-xl sm:text-2xl font-semibold tracking-wide"
                             >
-                                WELCOME TO MY PORTFOLIO
+
                             </motion.h2>
 
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-snug lg:leading-tight"
+                                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-snug lg:leading-tight"
                             >
-                                Hi, I’m <span className="text-emerald-500">Ishan</span>, a <br />
+                                 <span className="text-emerald-500">Ishan</span> <br />
                                 <span className="text-emerald-400">
-                <Typewriter
-                    words={['Full Stack Developer', 'Freelancer']}
-                    loop={true}
-                    cursor
-                    cursorStyle="_"
-                    typeSpeed={60}
-                    deleteSpeed={40}
-                    delaySpeed={2000}
-                />
-              </span>
+                        <Typewriter
+                            words={['Full Stack Developer', 'Freelancer']}
+                            loop={true}
+                            cursor
+                            cursorStyle="_"
+                            typeSpeed={60}
+                            deleteSpeed={40}
+                            delaySpeed={2000}
+                        />
+                    </span>
                             </motion.div>
 
                             <motion.p
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.3, duration: 0.6 }}
-                                className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-md lg:max-w-xl"
+                                className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-md mx-auto lg:mx-0 lg:max-w-xl"
                             >
                                 With over 5 years of experience, I specialize in building responsive websites and modern web applications with a focus on user experience and innovative design.
                             </motion.p>
@@ -123,7 +123,7 @@ function App() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.4, duration: 0.6 }}
-                                className="flex gap-4 sm:gap-6 pt-4 sm:pt-6"
+                                className="flex justify-center md:justify-start gap-4 sm:gap-6 pt-4 sm:pt-6"
                             >
                                 <a href="https://github.com/ImIshan7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
                                     <Github className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -153,16 +153,17 @@ function App() {
                             </motion.div>
                         </div>
 
+                        {/* Adjust image visibility for mobile */}
                         <motion.div
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.6, duration: 0.8 }}
-                            className="relative hidden lg:block"
+                            className="relative block lg:block"
                         >
                             <motion.img
                                 src={mine}
                                 alt="Professional portrait"
-                                className="rounded-2xl w-full max-w-md sm:max-w-lg mx-auto shadow-lg transition-transform duration-300 hover:scale-105"
+                                className="rounded-2xl w-2/3 sm:w-full max-w-xs sm:max-w-md mx-auto shadow-lg transition-transform duration-300 hover:scale-105"
                                 whileHover={{ rotate: [0, 2, -2, 2, -2, 0], scale: 1.05 }}
                                 transition={{ duration: 0.5, type: 'spring' }}
                             />
@@ -170,6 +171,12 @@ function App() {
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
 
 
             <div id="about" className="min-h-screen bg-[#0a0a0a] text-gray-100">
