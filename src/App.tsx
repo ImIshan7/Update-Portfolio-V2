@@ -14,6 +14,7 @@ import { ProjectSlider } from './components/ProjectSlider';
 import { StatsCounter } from './components/Service/StatsCounter';
 import { ServiceCard } from './components/Service/ServiceCard';
 import ContactForm from './components/Contact/ContactForm';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -221,6 +222,8 @@ function App() {
 
 
             <ContactForm/>
+
+             <Footer/>
 
 
         </>
