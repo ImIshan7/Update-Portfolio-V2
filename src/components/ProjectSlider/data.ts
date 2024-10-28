@@ -7,7 +7,7 @@ export const projects = [
             'seamless online shopping experience with visually captivating designs and optimized performance. The platform features an ' +
             'intuitive product catalog, secure checkout, and engaging UI animations, making it ideal for exploring and purchasing high-quality watches.',
         technologies: ['React', 'Tailwind CSS', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/watchhub.png'),
+        image: require('../../assets/images/project/Frame 1 (2).png'),
         link: 'https://github.com/ImIshan7/Zen-Watch-Hub.git'
     },
     {
@@ -18,7 +18,7 @@ export const projects = [
             'destinations, manage bookings, and receive tailored travel recommendations. The platform combines modern design with powerful backend technology, ' +
             'utilizing React, Tailwind CSS, Node.js, and MongoDB to deliver a smooth and efficient user experience.',
         technologies: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/zentraveller (1).png'),
+        image: require('../../assets/images/project/Frame 1 (3).png'),
         link: 'https://github.com/ImIshan7/Zen-Travel-System.git'
     },
     {
@@ -28,7 +28,7 @@ export const projects = [
         description: 'This Netflix clone allows users to browse a wide variety of movies and TV shows. Built with React and Tailwind CSS, it offers a responsive and ' +
             'intuitive interface that mimics the original Netflix experience. Features include user authentication, personalized recommendations, and real-time streaming.',
         technologies: ['React', 'Tailwind CSS'],
-        image: require('../../assets/images/project/netflix.png'),
+        image: require('../../assets/images/project/Frame 1 (7).png'),
         link: 'https://github.com/ImIshan7/Netflix-clone-React-application.git'
     },
     {
@@ -38,7 +38,7 @@ export const projects = [
         description: 'The "Car Rental" application provides a user-friendly interface for renting vehicles online. Built with Spring Boot, it supports advanced features ' +
             'like vehicle selection, secure payment processing, and user management. The integration of HTML, CSS, and JavaScript ensures an engaging user experience.',
         technologies: ['Spring Boot', 'HTML', 'CSS', 'JavaScript', 'MySQL', 'Hibernate', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/carrental.png'),
+        image: require('../../assets/images/project/Frame 1 (4).png'),
         link: 'https://github.com/ImIshan7/Zen-Easy-Car-Rent.git'
     },
     {
@@ -48,7 +48,7 @@ export const projects = [
         description: 'This portfolio website showcases my skills and projects in a clean and modern layout. Utilizing React and Tailwind CSS, the site is fully responsive, ' +
             'ensuring an optimal viewing experience across devices. It features detailed project descriptions and links to live demos and source code.',
         technologies: ['React', 'Tailwind CSS', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/reactport.png'),
+        image: require('../../assets/images/project/Frame 1 (9).png'),
         link: 'https://github.com/ImIshan7/My-Portfolio.git'
     },
     {
@@ -58,7 +58,7 @@ export const projects = [
         description: 'A thrilling 2D game where players must navigate through challenges to save the night. Built with HTML, CSS, and JavaScript, it combines engaging gameplay ' +
             'with interactive graphics. This project showcases my skills in game development and user interface design.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/game.png'),
+        image: require('../../assets/images/project/Frame 1 (6).png'),
         link: 'https://github.com/ImIshan7/Night-Game-2D.git'
     },
     {
@@ -68,7 +68,7 @@ export const projects = [
         description: 'The "Hostel System" is a web application designed for managing hostel operations efficiently. It offers features such as room booking, ' +
             'tenant management, and reporting tools, all built using Hibernate and Java. The intuitive interface streamlines administrative tasks and enhances user experience.',
         technologies: ['Hibernate', 'Java', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/hostel.png'),
+        image: require('../../assets/images/project/Frame 1 (1).png'),
         link: 'https://github.com/ImIshan7/Hostel-System-Hibernate.git'
     },
     {
@@ -78,7 +78,20 @@ export const projects = [
         description: 'This management system facilitates the operations of a computer shop, providing features for inventory management, sales tracking, and customer service. ' +
             'Utilizing Java and MVC architecture, the application ensures scalability and maintainability, making it an ideal solution for small to medium-sized businesses.',
         technologies: ['Java', 'MVC', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/computershop.png'),
+        image: require('../../assets/images/project/Frame 1.png'),
+        link: 'https://github.com/ImIshan7/Computershop.git'
+    },
+
+    {
+        place: 'Full Stack Application ',
+        title: 'FINANCE',
+        title2: 'TRACKER',
+        description: 'This management system facilitates the operations of a computer shop, providing features for inventory management, sales tracking, and customer service. ' +
+            'Utilizing Java and MVC architecture, the application ensures scalability and maintainability, making it an ideal solution for small to medium-sized businesses.',
+        technologies: ['Java', 'MVC', 'IntelliJ IDEA'],
+        image: require('../../assets/images/project/Frame 1 (5).png'),
         link: 'https://github.com/ImIshan7/Computershop.git'
     }
+
+
 ];

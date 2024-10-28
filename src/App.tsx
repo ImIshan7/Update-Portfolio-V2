@@ -13,6 +13,7 @@ import mine from './assets/images/profile.png';
 import { ProjectSlider } from './components/ProjectSlider';
 import { StatsCounter } from './components/Service/StatsCounter';
 import { ServiceCard } from './components/Service/ServiceCard';
+import ContactForm from './components/Contact/ContactForm';
 
 function App() {
 
@@ -54,9 +55,19 @@ function App() {
             description: "Streamlined development operations with automated workflows and continuous integration/deployment.",
             image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&q=80&w=800"
         }
+
     ];
 
-    // @ts-ignore
+
+
+    const scrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+
     return (
         <>
             {/* Navbar */}
@@ -114,13 +125,13 @@ function App() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                                 className="flex gap-4 sm:gap-6 pt-4 sm:pt-6"
                             >
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
+                                <a href="https://github.com/ImIshan7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
                                     <Github className="w-5 h-5 sm:w-6 sm:h-6" />
                                 </a>
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
+                                <a href="https://www.linkedin.com/in/ishan-dhananjana-615878226" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
                                     <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
                                 </a>
-                                <a href="mailto:contact@example.com" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
+                                <a href="mailto:ishandhananjana61@gmail.com" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300">
                                     <Mail className="w-5 h-5 sm:w-6 sm:h-6" />
                                 </a>
                             </motion.div>
@@ -135,6 +146,7 @@ function App() {
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     className="bg-emerald-500 text-black px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold hover:bg-emerald-400 transition-transform duration-300"
+                                    onClick={scrollToContact}
                                 >
                                     Let’s Connect
                                 </motion.button>
@@ -199,6 +211,9 @@ function App() {
                     </div>
                 </div>
             </div>
+
+
+            <ContactForm/>
 
 
         </>

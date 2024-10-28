@@ -273,3 +273,37 @@ html {
     animation: fadeIn 0.5s ease-in-out forwards;
 }
 
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.animate-gradient {
+    animation: gradient 15s linear infinite;
+}
+
+body {
+    @apply bg-black;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-neutral-900;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-neutral-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-600;
+}
