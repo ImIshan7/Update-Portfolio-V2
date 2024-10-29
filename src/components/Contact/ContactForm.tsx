@@ -11,7 +11,6 @@ interface FormData {
     user_name: string;
     user_email: string;
     message: string;
-    reply_to: string; // Added for EmailJS auto-response
 }
 
 const ContactForm = () => {
@@ -20,7 +19,6 @@ const ContactForm = () => {
         user_name: '',
         user_email: '',
         message: '',
-        reply_to: '', // Will be set to user's email
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -30,30 +28,17 @@ const ContactForm = () => {
 
         setIsSubmitting(true);
 
-        // Set reply_to to user's email for auto-response
-        const templateParams = {
-            ...formData,
-            reply_to: formData.user_email,
-        };
-
         try {
-            // Send email to you (the owner)
             const result = await emailjs.sendForm(
                 EMAILJS_CONFIG.serviceId,
                 EMAILJS_CONFIG.templateId,
-                formRef.current
+                formRef.current,
+                EMAILJS_CONFIG.publicKey
             );
 
             if (result.status === 200) {
-                // Send auto-response to the user
-                await emailjs.send(
-                    EMAILJS_CONFIG.serviceId,
-                    EMAILJS_CONFIG.autoReplyTemplateId,
-                    templateParams
-                );
-
-                toast.success('Message sent successfully! Check your email for confirmation.');
-                setFormData({ user_name: '', user_email: '', message: '', reply_to: '' });
+                toast.success('Message sent successfully!');
+                setFormData({ user_name: '', user_email: '', message: '' });
             }
         } catch (error) {
             toast.error('Failed to send message. Please try again.');
@@ -67,8 +52,7 @@ const ContactForm = () => {
         const { name, value } = e.target;
         setFormData(prev => ({
             ...prev,
-            [name]: value,
-            reply_to: name === 'user_email' ? value : prev.reply_to,
+            [name]: value
         }));
     };
 
@@ -83,8 +67,9 @@ const ContactForm = () => {
                     transition={{ duration: 0.6 }}
                     className="pt-16"
                 >
-                    <h2 className="text-2xl md:text-4xl font-bold text-center  text-white font-['Oswald']"> Let's Connect </h2>
-
+                    <h2 className="text-2xl md:text-4xl font-bold text-center text-white font-['Oswald']">
+                        Let's Connect
+                    </h2>
                 </motion.div>
 
                 <div className="mt-12 grid md:grid-cols-2 gap-x-8 gap-y-12 pb-16">
