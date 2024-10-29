@@ -54,7 +54,7 @@ const Hero = () => {
                             transition={{ delay: 0.3, duration: 0.6 }}
                             className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed"
                         >
-                            With over 5 years of experience, I specialize in building responsive websites
+                            With over 3 years of experience, I specialize in building responsive websites
                             and modern web applications with a focus on user experience and innovative design.
                         </motion.p>
 
