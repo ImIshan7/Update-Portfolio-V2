@@ -1,19 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+
 import './assets/styles/styles.css';
 import Timeline from './components/Education/TimeLine';
 import AboutSection from './components/About/AboutSection';
 import TechStack from './components/TechStack/TechStack';
 import Navbar from './components/Navbar/Navbar';
-import {Boxes, Cloud, Code2, Database, Github, Layout, Linkedin, Mail, Smartphone } from 'lucide-react';
+import {Boxes, Cloud, Code2, Database,  Layout, Smartphone } from 'lucide-react';
 import { ProjectSlider } from './components/ProjectSlider';
 import { StatsCounter } from './components/Service/StatsCounter';
 import { ServiceCard } from './components/Service/ServiceCard';
 import ContactForm from './components/Contact/ContactForm';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Home/Hero';
+import {useEffect, useState } from 'react';
+import LogoLoader from './components/Loader/LogoLoader';
 
 function App() {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate loading time (remove this in production and use real loading states)
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 2000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (isLoading) {
+        return <LogoLoader/>;
+    }
 
 
     const services = [
@@ -58,12 +73,12 @@ function App() {
 
 
 
-    const scrollToContact = () => {
+    /*const scrollToContact = () => {
         const contactSection = document.getElementById('contact');
         if (contactSection) {
             contactSection.scrollIntoView({ behavior: 'smooth' });
         }
-    };
+    };*/
 
 
     return (
