@@ -21,13 +21,12 @@ export const ProjectSlider = () => {
         return () => ctx.revert();
     }, [currentIndex]);
 
-    // Auto-slide logic
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % projects.length);
-        }, 7000); // 5 seconds for each slide
+        }, 7000);
 
-        return () => clearInterval(intervalId); // Clean up on unmount
+        return () => clearInterval(intervalId);
     }, []);
 
     const nextSlide = () => {
@@ -51,8 +50,8 @@ export const ProjectSlider = () => {
                 <div className="absolute inset-0 bg-black opacity-70" />
             </div>
 
-            <div className="absolute top-4 md:top-8 left-1/2 -translate-x-1/2 z-10">
-                <h1 className="text-2xl md:text-4xl font-bold text-white font-['Oswald']">MY PROJECTS</h1>
+            <div className="absolute top-2 xs:top-4 sm:top-8 left-1/2 transform -translate-x-1/2 z-10">
+                <h1 className="text-lg xs:text-xl sm:text-2xl md:text-4xl font-bold text-white font-['Oswald']">MY PROJECTS</h1>
             </div>
 
             <ProjectContent {...current} />
