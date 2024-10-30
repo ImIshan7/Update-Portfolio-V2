@@ -3,18 +3,11 @@ import { School, GraduationCap, Calendar } from 'lucide-react';
 
 const timelineData = [
     {
-        year: "2007-2017",
-        title: "Yatalamaththa Maha Vidyalaya",
-        description: "I did my primary and secondary education well here.",
-        level: "Ordinary Level",
-        icon: School
-    },
-    {
-        year: "2018-2020",
-        title: "Dr.Richard Pathirana College",
-        description: "I did my advanced level education well here.",
-        level: "Advanced Level",
-        icon: School
+        year: "2024-2025",
+        title: "Institute of Software Engineering",
+        description: "I do my graduation here after completing my graduate diploma in software engineering course",
+        level: "Degree Level",
+        icon: GraduationCap
     },
     {
         year: "2022-2024",
@@ -24,11 +17,18 @@ const timelineData = [
         icon: GraduationCap
     },
     {
-        year: "2024-2025",
-        title: "Institute of Software Engineering",
-        description: "I do my graduation here after completing my graduate diploma in software engineering course",
-        level: "Degree Level",
-        icon: GraduationCap
+        year: "2018-2020",
+        title: "Dr.Richard Pathirana College",
+        description: "I did my advanced level education well here.",
+        level: "Advanced Level",
+        icon: School
+    },
+    {
+        year: "2007-2017",
+        title: "Yatalamaththa Maha Vidyalaya",
+        description: "I did my primary and secondary education well here.",
+        level: "Ordinary Level",
+        icon: School
     }
 ];
 
