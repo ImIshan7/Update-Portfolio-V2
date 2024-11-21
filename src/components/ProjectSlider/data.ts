@@ -1,15 +1,50 @@
 export const projects = [
     {
         place: 'Full Stack Application',
-        title: 'ZEN WATCH',
-        title2: 'HUB',
-        description: '"Zen Watch Hub" is a sleek and responsive e-commerce platform designed for watch enthusiasts. It offers a ' +
-            'seamless online shopping experience with visually captivating designs and optimized performance. The platform features an ' +
-            'intuitive product catalog, secure checkout, and engaging UI animations, making it ideal for exploring and purchasing high-quality watches.',
+        title: 'ZEN NFT ',
+        title2: 'Marketplace',
+        description: '"Zen NFT Marketplace is a cutting-edge platform for buying, selling, and exploring unique digital assets.' +
+            ' Discover exclusive NFTs, connect with creators, and securely trade within a vibrant community powered by blockchain technology.',
         technologies: ['React', 'Tailwind CSS', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/Frame 1 (2).png'),
-        link: 'https://github.com/ImIshan7/Zen-Watch-Hub.git'
+        image: require('../../assets/images/project/NFT.png'),
+        link: 'https://imishan7.github.io/Zen-NFT-Marketplace-/'
     },
+
+    {
+        place: 'Web Application',
+        title: 'ZEN FAST',
+        title2: 'EXPRESS',
+        description: 'ZEN FAST EXPRESS is a reliable and efficient delivery service offering swift, secure,' +
+            ' and hassle-free logistics solutions. Experience fast and seamless shipping tailored to meet your needs.',
+        technologies: ['React', 'Tailwind CSS', 'IntelliJ IDEA'],
+        image: require('../../assets/images/project/deliver.png'),
+        link: 'https://imishan7.github.io/Zen-Fast-Express/'
+    },
+
+    {
+        place: 'Full Stack Application',
+        title: 'ZEN',
+        title2: 'OUTFITTERS',
+        description: 'Welcome to Zen Outfitters – your one-stop shop for premium camping gear that blends comfort and adventure. ' +
+            '🏕️ Whether you are exploring uncharted trails or setting up camp under the stars, we have got you covered with' +
+            ' sustainable and top-notch outdoor equipment. 🛠️✨',
+        technologies: ['React', 'Tailwind CSS'],
+        image: require('../../assets/images/project/Camping.png'),
+        link: 'https://imishan7.github.io/Zen-Outfitters-Hub/'
+    },
+
+    {
+        place: 'Full Stack Application',
+        title: 'CRYPTO',
+        title2: 'HUB',
+        description: 'Welcome to Crypto Hub — your go-to platform for all things cryptocurrency! 💹' +
+            'Discover, learn, and stay updated with the latest trends in the crypto world. 🚀' +
+            '',
+        technologies: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB', 'IntelliJ IDEA'],
+        image: require('../../assets/images/project/crypto.png'),
+        link: 'https://imishan7.github.io/crypto-hub/'
+    },
+
     {
         place: 'Full Stack Application',
         title: 'ZEN',
@@ -21,16 +56,7 @@ export const projects = [
         image: require('../../assets/images/project/Frame 1 (3).png'),
         link: 'https://github.com/ImIshan7/Zen-Travel-System.git'
     },
-    {
-        place: 'Web Application',
-        title: 'NETFLIX',
-        title2: 'CLONE',
-        description: 'This Netflix clone allows users to browse a wide variety of movies and TV shows. Built with React and Tailwind CSS, it offers a responsive and ' +
-            'intuitive interface that mimics the original Netflix experience. Features include user authentication, personalized recommendations, and real-time streaming.',
-        technologies: ['React', 'Tailwind CSS'],
-        image: require('../../assets/images/project/Frame 1 (7).png'),
-        link: 'https://github.com/ImIshan7/Netflix-clone-React-application.git'
-    },
+
     {
         place: 'Full Stack Application',
         title: 'CAR',
@@ -41,16 +67,18 @@ export const projects = [
         image: require('../../assets/images/project/Frame 1 (4).png'),
         link: 'https://github.com/ImIshan7/Zen-Easy-Car-Rent.git'
     },
+
     {
-        place: 'Web Application',
-        title: 'PORTFOLIO',
-        title2: 'WEBSITE',
-        description: 'This portfolio website showcases my skills and projects in a clean and modern layout. Utilizing React and Tailwind CSS, the site is fully responsive, ' +
-            'ensuring an optimal viewing experience across devices. It features detailed project descriptions and links to live demos and source code.',
-        technologies: ['React', 'Tailwind CSS', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/Frame 1 (9).png'),
-        link: 'https://github.com/ImIshan7/My-Portfolio.git'
+        place: 'Full Stack Application ',
+        title: 'FINANCE',
+        title2: 'TRACKER',
+        description: 'This management system facilitates the operations of a computer shop, providing features for inventory management, sales tracking, and customer service. ' +
+            'Utilizing Java and MVC architecture, the application ensures scalability and maintainability, making it an ideal solution for small to medium-sized businesses.',
+        technologies: ['Java', 'MVC', 'IntelliJ IDEA'],
+        image: require('../../assets/images/project/Frame 1 (5).png'),
+        link: 'https://github.com/ImIshan7/Computershop.git'
     },
+
     {
         place: 'Game Development',
         title: 'NIGHT',
@@ -80,18 +108,8 @@ export const projects = [
         technologies: ['Java', 'MVC', 'IntelliJ IDEA'],
         image: require('../../assets/images/project/Frame 1.png'),
         link: 'https://github.com/ImIshan7/Computershop.git'
-    },
-
-    {
-        place: 'Full Stack Application ',
-        title: 'FINANCE',
-        title2: 'TRACKER',
-        description: 'This management system facilitates the operations of a computer shop, providing features for inventory management, sales tracking, and customer service. ' +
-            'Utilizing Java and MVC architecture, the application ensures scalability and maintainability, making it an ideal solution for small to medium-sized businesses.',
-        technologies: ['Java', 'MVC', 'IntelliJ IDEA'],
-        image: require('../../assets/images/project/Frame 1 (5).png'),
-        link: 'https://github.com/ImIshan7/Computershop.git'
     }
+
 
 
 ];
