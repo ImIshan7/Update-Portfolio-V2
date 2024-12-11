@@ -45,6 +45,68 @@ export const projects = [
         link: 'https://imishan7.github.io/crypto-hub/'
     },
 
+
+    {
+        place: 'Full Stack Application',
+        title: 'ZEN WATCH',
+        title2: 'HUB',
+        description: '"🕒✨ Explore elegance and precision with **Zen Watch Hub** – your ultimate online destination' +
+            ' for premium watches! ⌚💼 Built with React and Tailwind CSS, this sleek e-commerce platform ensures a ' +
+            'seamless shopping experience for every watch enthusiast. 🛒🚀"',
+        technologies: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB', 'IntelliJ IDEA'],
+        image: require('../../assets/images/project/watch.png'),
+        link: 'https://imishan7.github.io/Zen-Watch-Hub/'
+    },
+
+
+    {
+        place: 'Full Stack Application',
+        title: 'ZEN SHOE',
+        title2: 'HUB',
+        description: '"👟✨ Step into style with **Zen Shoes Hub** – your go-to online store for trendy and comfortable' +
+            ' footwear! 🥿👞 Built with cutting-edge tech, this e-commerce platform delivers a seamless shopping ' +
+            'experience for every shoe lover. 🛒🚀"',
+        technologies: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB', 'IntelliJ IDEA'],
+        image: require('../../assets/images/project/shoes.png'),
+        link: 'https://imishan7.github.io/Zen-Shoes-Hub/'
+    },
+
+
+    {
+        place: 'Full Stack Application',
+        title: 'CRATE',
+        title2: 'ZEN',
+        description: '"🍽️✨ Indulge in flavors at **Zen Restaurant** – where delicious cuisine meets a modern dining experience! ' +
+            '🍔🍣 Built with passion and tech, this website serves up a seamless way to explore menus and reserve your table. 🛎️🌟"',
+        technologies: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB', 'IntelliJ IDEA'],
+        image: require('../../assets/images/project/resturent.png'),
+        link: 'https://imishan7.github.io/Zen-Restaurant/'
+    },
+
+
+    {
+        place: 'Full Stack Application',
+        title: 'ZEN',
+        title2: 'FITNESS',
+        description: '"💪🏋️‍♂️ Achieve your fitness goals with **Zen Fitness** – your ultimate online hub for health and wellness!' +
+            ' 🥗🏃‍♀️ Designed for fitness enthusiasts, this platform offers workouts, tips, and more to keep you motivated. 🚀🔥"',
+        technologies: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB', 'IntelliJ IDEA'],
+        image: require('../../assets/images/project/gym.png'),
+        link: 'https://imishan7.github.io/Zen-Fitness/'
+    },
+
+
+    {
+        place: 'Full Stack Application',
+        title: 'ZEN TRAVEL',
+        title2: 'BLOG',
+        description: '"✈️🌍 Discover breathtaking destinations with **Zen Travel Blog** – your guide to adventures in ' +
+            'Sri Lanka, Japan, Nepal, Bali, and beyond! 🏞️📸 Dive into travel stories, tips, and inspiration for your next journey. 🧳✨"',
+        technologies: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB', 'IntelliJ IDEA'],
+        image: require('../../assets/images/project/blog.png'),
+        link: 'https://imishan7.github.io/Zen-Traveler-Blog-React-Application/'
+    },
+
     {
         place: 'Full Stack Application',
         title: 'ZEN',
